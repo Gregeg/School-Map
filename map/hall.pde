@@ -1,13 +1,13 @@
 import java.util.ArrayList;
 
-class Hall{
+class Hall extends Path{
   Junction nextJunc;
   int dir;     // dir (index of array): 0=TOP, 1=BOTTOM, 2=LEFT, 3=RIGHT
   ArrayList<Classroom> rightSide , leftSide; // relative to travelling down hall, order 0 at beggining, last at end of hallway
   
   Hall(Junction nextJunc, int dir){
+    super(dir);
     this.nextJunc = nextJunc;
-    this.dir = dir;
   }
   
   void addRightClassroom(Classroom room){

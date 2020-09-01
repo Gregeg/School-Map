@@ -1,7 +1,7 @@
 class Classroom{
   int roomNum;
   String teacher;
-  Hall leftHall = null, rightHall = null; // left/right as exiting the room;  if null direciton doesn't exist (oneway hall); these are added when class is added to the hallway
+  Hall leftHall = null, rightHall = null; // left/right as exiting the room;  if null then direciton doesn't exist (oneway hall); these are added when class is added to the hallway
   
   Classroom(int roomNum){
     this.roomNum = roomNum;
