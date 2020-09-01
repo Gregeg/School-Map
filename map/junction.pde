@@ -8,7 +8,7 @@ class Junction{
    this.halls = halls;
   }
   
-  // dir (index of array): 0=UP, 1=DOWN, 2=LEFT, 3=RIGHT
+  // dir (index of array): 0=TOP, 1=BOTTOM, 2=LEFT, 3=RIGHT
   Hall getHall(int dir){
     return halls[dir];
   }
@@ -18,7 +18,7 @@ class Junction{
     return halls;
   }
   
-  // dir (index of array): 0=UP, 1=DOWN, 2=LEFT, 3=RIGHT
+  // dir (index of array): 0=TOP,0=UP, 1=BOTTOM, 2=LEFT, 3=RIGHT
   void addHall(int dir, Hall hall){
      halls[dir] = hall; 
   }

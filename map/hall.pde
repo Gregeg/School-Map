@@ -2,11 +2,12 @@ import java.util.ArrayList;
 
 class Hall{
   Junction nextJunc;
-  int dir;     // dir (index of array): 0=UP, 1=DOWN, 2=LEFT, 3=RIGHT
+  int dir;     // dir (index of array): 0=TOP, 1=BOTTOM, 2=LEFT, 3=RIGHT
   ArrayList<Classroom> rightSide , leftSide; // relative to travelling down hall, order 0 at beggining, last at end of hallway
   
   Hall(Junction nextJunc, int dir){
     this.nextJunc = nextJunc;
+    this.dir = dir;
   }
   
   void addRightClassroom(Classroom room){
@@ -41,10 +42,9 @@ class Hall{
     else
       return rightSide.size();
   }
-  
-  
+  Junction getNextJunc(){ return nextJunc;}
 }
 
 
 
-// TODO: add double hallway when givin first junc, array of rooms on both sides(in order from begginning to end of hallway), and last junc
+// TODO: add doubleallway when givin first junc, array of rooms on both sides(in order from begginning to end of hallway), and last junc
